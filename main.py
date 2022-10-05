@@ -22,9 +22,9 @@ async def root():
     return ["item of the list i return"]
 
 api_object = Songbird_Api()
-api_object.songbird_response("name")
+api_object.songbird_response_name()
 print("###############################################")
-api_object.songbird_response("price")
+api_object.songbird_response_price()
 print("###############################################")
 api_object.songbird_response("fdsvdsvw")
 
@@ -59,7 +59,7 @@ class MyButton(ButtonBehavior, Image):
 class SampleApp(App):
     def build(self):
         listing = ""
-        for i in range(len(triing)-4):
+        for i in range(len(triing)-1):
             if i % 2 == 0 :
                 listing = listing + str(triing[i]) +" : "+ str(triing[(i+1)])+ "\n"
                 
@@ -67,7 +67,7 @@ class SampleApp(App):
               
         return label
     
-print("Works so far, organized??")
+
 SampleApp().run()
 
     
