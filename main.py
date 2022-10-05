@@ -26,7 +26,7 @@ api_object.songbird_response_name()
 print("###############################################")
 api_object.songbird_response_price()
 print("###############################################")
-api_object.songbird_response("fdsvdsvw")
+api_object.songbird_response_name()
 
 class TestApp(App):
     def build(self):
@@ -43,7 +43,7 @@ class MyButton(ButtonBehavior, Image):
     def on_release(self):
         self.source = 'atlas://data/images/defaulttheme/checkbox_off'
         
-triing = api_object.songbird_response("name")         
+        
     
 class MyButton(ButtonBehavior, Image):
     def __init__(self, **kwargs):
@@ -58,6 +58,8 @@ class MyButton(ButtonBehavior, Image):
 
 class SampleApp(App):
     def build(self):
+        triing = api_object.songbird_response_name() #toDo: figure out a way to remove none values
+        
         listing = ""
         for i in range(len(triing)-1):
             if i % 2 == 0 :

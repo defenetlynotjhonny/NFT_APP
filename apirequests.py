@@ -24,7 +24,7 @@ class Songbird_Api():
     
     def songbird_response_name(self):
         result = []
-        for i in range(10):
+        for i in range(8):
             print(f"TokenName {i}: ", self.sgbresponse.json()["result"][i]["name"],"\n","TokenBalance: ",self.sgbresponse.json()["result"][i]["balance"] )
             result.append(self.sgbresponse.json()["result"][i]["name"])
             result.append(self.sgbresponse.json()["result"][i]["balance"])
